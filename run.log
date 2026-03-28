@@ -1,0 +1,15 @@
+2026-03-28 19:05:47,909 - INFO - ========== JOB STARTED ==========
+2026-03-28 19:05:47,909 - INFO - Run ID: 2c5b9f1a
+2026-03-28 19:05:47,909 - INFO - Input file: data.csv
+2026-03-28 19:05:47,909 - INFO - Config file: config.yaml
+2026-03-28 19:05:47,909 - INFO - Config validated | seed=42 | window=5 | version=v1
+2026-03-28 19:05:47,909 - INFO - Random seed set to 42
+2026-03-28 19:05:47,923 - INFO - Dataset loaded successfully | rows=10000
+2026-03-28 19:05:47,923 - INFO - Columns detected: ['timestamp', 'open', 'high', 'low', 'close', 'volume_btc', 'volume_usd']
+2026-03-28 19:05:47,923 - INFO - Computing rolling mean with window=5
+2026-03-28 19:05:47,925 - INFO - Rows before processing: 10000, after dropna: 9996
+2026-03-28 19:05:47,925 - INFO - Dropped initial NaN rows from rolling mean (for deterministic signal computation)
+2026-03-28 19:05:47,925 - INFO - Signal generation completed successfully
+2026-03-28 19:05:47,925 - INFO - Metrics computed successfully: {'version': 'v1', 'rows_processed': 9996, 'metric': 'signal_rate', 'value': 0.4991, 'latency_ms': 15, 'seed': 42, 'status': 'success'}
+2026-03-28 19:05:47,926 - INFO - Metrics written to metrics.json
+2026-03-28 19:05:47,926 - INFO - ========== JOB FINISHED ==========
