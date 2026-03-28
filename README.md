@@ -49,6 +49,16 @@ It is designed to demonstrate **production-oriented engineering principles**:
 
 ---
 
+## Dataset
+
+The input dataset (`data.csv`) contains OHLCV (Open, High, Low, Close, Volume) data with ~10,000 rows.
+
+* Only the `close` column is used for signal computation
+* Additional columns are preserved for completeness but not used in processing
+* The pipeline validates schema and handles inconsistencies in input format
+
+---
+
 ## Pipeline Workflow
 
 1. Load and validate configuration (YAML)
